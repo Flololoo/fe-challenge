@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<header class="header">
+    <img class="logo" src="./img/Eintracht_Frankfurt_Logo.svg.webp" alt="">
+    <div class="d-flex">
+        <button class="header-mobile-only open-search-btn js-open-search-btn"><i class="icon-search"></i></button>
+        <a href="#" class="user-area user-area-mobile header-mobile-only"><i class="icon-user icon"></i></a>
+        <button type="button" class="js-menu-btn menu-btn"><i class="icon-menu"></i></button>
+    </div>
+
+    <div class="searchbar searchbar--mobile js-searchbar--mobile">
+        <input type="text" placeholder="Suchbegriff">
+        <i class="icon-search"></i>
+    </div>
+
+    <div class="navs js-navs">
+        <div class="bg-dark justify-content-between align-items-center nav-wrapper">
+            <div class="justify-content-between mobile-first-layer js-open-top-nav">
+                lorem ipsum <div class="rotate-right"><i class="icon-cheveron-down"></i></div>
+            </div>
+            <nav class="top-nav js-top-nav container container__header">
+                <div class="d-flex js-close-top-nav close-top-nav header-mobile-only">
+                    <div class="rotate-left"><i class="icon-cheveron-down"></i></div> zurück
+                </div>
+                <ul class="top-nav__list">
+                    <li><a href="">Startseite</a></li>
+                    <li><a href="">Verein</a></li>
+                    <li><a href="">Fanshops</a></li>
+                    <li><a href="">Eintracht Musik</a></li>
+                    <li><a href="">Stadion</a></li>
+                    <li><a href="">Sky</a></li>
+                    <li class="active"><a href="">TV</a></li>
+                    <li><a href="">tickets</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-icons">
+                <i class="icon icon-twitter-square"></i>
+                <i class="icon icon-facebook2"></i>
+                <i class="icon icon-instagram"></i>
+                <i class="icon icon-youtube"></i>
+            </div>
+        </div>
+        <div class="justify-content-between align-items-center container container__header nav-wrapper">
+            <nav class="bottom-nav">
+                <ul class="bottom-nav__list">
+                    <li class="js-bottom-nav__list-level-one">
+                        <a href="" class="d-flex justify-content-between">Saison<div class="d-flex header-mobile-only"><i class="icon-cheveron-down rotate-right"></i></div></a>
+                        <div class="bottom-nav__list-level-two js-bottom-nav__list-level-two">
+                            <div class="d-flex js-close-second-layer close-second-layer header-mobile-only">
+                                <div class="rotate-left"><i class="icon-cheveron-down"></i></div> zurück
+                            </div>
+                            <ul class="container container__header">
+                                <li><a href="">submenu 1</a></li>
+                                <li><a href="">submenu 2</a></li>
+                                <li><a href="">submenu 3</a></li>
+                                <li><a href="">submenu 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">Interviews</a></li>
+                    <li><a href="">International</a></li>
+                    <li><a href="">Archiv</a></li>
+                    <li><a href="">TV-Programm</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex">
+                <a href="#" class="user-area user-area--desktop"><i class="icon-user"></i><span class="d-none d-xxl-block">Willkommen zurück, Holger!</span></a>
+
+                <div class="searchbar searchbar--desktop">
+                    <input type="text" placeholder="Suchbegriff">
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="header-sujet-slider swiper-container bg-dark">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="header-sujet" style="position: relative">
+                <img src="./img/img-one.png" alt="image description">
+                <div class="header-sujet_badge">
+                    <div class="header-sujet_badge-date">08.05</div>
+                    <div class="header-sujet_badge-category">Uefa Europa League</div>
+                </div>
+                <div class="header-sujet_text">
+                    <h2 class="header-sujet_text-headline">Starke Leistung der Adler</h2>
+                    <p class="header-sujet_text-paragraph">
+                        nach dem 1:1 im Hinspiel gegen den FC Chelsea ist noch alles möglich. <br>
+                        Die Highlights der spannenden Partie hier im Video.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="header-sujet" style="position: relative">
+                <img src="./img/img-two.png" alt="image description">
+                <div class="header-sujet_badge">
+                    <div class="header-sujet_badge-date">08.05</div>
+                    <div class="header-sujet_badge-category">Uefa Europa League</div>
+                </div>
+                <div class="header-sujet_text">
+                    <h2 class="header-sujet_text-headline">Starke Leistung der Adler</h2>
+                    <p class="header-sujet_text-paragraph">
+                        nach dem 1:1 im Hinspiel gegen den FC Chelsea ist noch alles möglich. <br>
+                        Die Highlights der spannenden Partie hier im Video.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="header-sujet" style="position: relative">
+                <img src="./img/img-three.png" alt="image description">
+                <div class="header-sujet_badge">
+                    <div class="header-sujet_badge-date">08.05</div>
+                    <div class="header-sujet_badge-category">Uefa Europa League</div>
+                </div>
+                <div class="header-sujet_text">
+                    <h2 class="header-sujet_text-headline">Starke Leistung der Adler</h2>
+                    <p class="header-sujet_text-paragraph">
+                        nach dem 1:1 im Hinspiel gegen den FC Chelsea ist noch alles möglich. <br>
+                        Die Highlights der spannenden Partie hier im Video.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-sujet-slider-prev swiper-button-prev"></div>
+    <div class="header-sujet-slider-next swiper-button-next"></div>
+</div>
+
+<main class="bg-dark">
+    <div class="content-slider content-slider--first swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+
+    <div class="container d-lg-flex align-items-center">
+        <h2 class="content-headline">Saison</h2>
+        <div class="d-md-flex justify-content-between w-100 content-multiple">
+            <ul class="content-categories">
+                <li class="active"><a href="#">Bundesliga</a></li>
+                <li><a href="#">DFB Pokal</a></li>
+                <li><a href="#">Europa League</a></li>
+                <li><a href="#">Mainova Energieleistung</a></li>
+                <li><a href="#">Testspiele</a></li>
+            </ul>
+            <div class="content-select">
+                <label for="gameday">Spieltag wählen</label>
+                <select name="gameday" id="gameday">
+                    <option selected value="choose">Spieltag wählen</option>
+                    <option value="one">one</option>
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="content-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+
+    <div class="container d-lg-flex align-items-center content-spacer">
+        <h2 class="content-headline">Stories</h2>
+        <ul class="content-categories">
+            <li><a href="#">Hintergrund</a></li>
+            <li><a href="#">Riederwald</a></li>
+            <li><a href="#">fans</a></li>
+        </ul>
+    </div>
+    <div class="content-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+
+    <div class="container d-lg-flex align-items-center content-spacer">
+        <h2 class="content-headline">Interviews</h2>
+        <ul class="content-categories">
+            <li><a href="#">Adlerträger</a></li>
+            <li><a href="#">Krombacher Runde</a></li>
+        </ul>
+    </div>
+    <div class="content-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+
+    <div class="container d-lg-flex align-items-center content-spacer">
+        <h2 class="content-headline">International</h2>
+        <ul class="content-categories">
+            <li><a href="#">english</a></li>
+            <li><a href="#">spanish</a></li>
+            <li><a href="#">japanese</a></li>
+        </ul>
+    </div>
+    <div class="content-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+
+    <div class="container d-lg-flex align-items-center content-spacer">
+        <h2 class="content-headline">archiv</h2>
+        <ul class="content-categories">
+            <li><a href="#">eintracht tv news</a></li>
+            <li><a href="#">solo</a></li>
+            <li><a href="#">krombacher runde</a></li>
+            <li><a href="#">dfb pokal</a></li>
+            <li><a href="#">europa league</a></li>
+            <li><a href="#">gais 2017</a></li>
+            <li><a href="#">alicante 2018</a></li>
+            <li><a href="#">testspiele</a></li>
+        </ul>
+    </div>
+    <div class="content-slider swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Highlights: Bayer 04 Leverkusen - Eintracht Frankfurt</a></h3>
+            </div>
+            <div class="swiper-slide">
+                <div class="play-button-wrapper">
+                    <img src="./img/img-one.png" alt="">
+                    <i class="icon-play play-button"></i>
+                </div>
+                <div class="content-slider__info d-flex">
+                    <div class="content-slider__info-state"><i class="icon-unlocked"></i></div>
+                    <div class="content-slider__info-date"><span>08.05.</span></div>
+                    <div class="content-slider__info-category"><span>Europa League</span></div>
+                </div>
+                <h3 class="content-slider__headline"><a href="#" class="stretched-link">Erste Impressionionen aus London</a></h3>
+            </div>
+        </div>
+        <div class="content-slider-button-prev swiper-button-prev"></div>
+        <div class="content-slider-button-next swiper-button-next"></div>
+    </div>
+
+</main>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
