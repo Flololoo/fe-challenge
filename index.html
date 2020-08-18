@@ -11,10 +11,12 @@
 <body>
 
 <header class="header">
+
+    <!-- I wanted to download a svg file but got webp instead. Should be changed to svg -->
     <img class="logo" src="./img/Eintracht_Frankfurt_Logo.svg.webp" alt="">
     <div class="d-flex">
-        <button class="header-mobile-only open-search-btn js-open-search-btn"><i class="icon-search"></i></button>
-        <a href="#" class="user-area user-area-mobile header-mobile-only"><i class="icon-user icon"></i></a>
+        <button class="header--mobile-only open-search-btn js-open-search-btn"><i class="icon-search"></i></button>
+        <a href="#" class="user-area user-area-mobile header--mobile-only"><i class="icon-user icon"></i></a>
         <button type="button" class="js-menu-btn menu-btn"><i class="icon-menu"></i></button>
     </div>
 
@@ -29,7 +31,7 @@
                 lorem ipsum <div class="rotate-right"><i class="icon-cheveron-down"></i></div>
             </div>
             <nav class="top-nav js-top-nav container container__header">
-                <div class="d-flex js-close-top-nav close-top-nav header-mobile-only">
+                <div class="d-flex js-close-top-nav close-top-nav header--mobile-only">
                     <div class="rotate-left"><i class="icon-cheveron-down"></i></div> zurück
                 </div>
                 <ul class="top-nav__list">
@@ -51,13 +53,15 @@
                 <i class="icon icon-youtube"></i>
             </div>
         </div>
+
+        <!-- only the first to elements have a drop down nav. The rest would work the same -->
         <div class="justify-content-between align-items-center container container__header nav-wrapper">
             <nav class="bottom-nav">
                 <ul class="bottom-nav__list">
                     <li class="js-bottom-nav__list-level-one">
-                        <a href="" class="d-flex justify-content-between">Saison<div class="d-flex header-mobile-only"><i class="icon-cheveron-down rotate-right"></i></div></a>
+                        <a href="" class="d-flex justify-content-between">Saison<div class="d-flex header--mobile-only"><i class="icon-cheveron-down rotate-right"></i></div></a>
                         <div class="bottom-nav__list-level-two js-bottom-nav__list-level-two">
-                            <div class="d-flex js-close-second-layer close-second-layer header-mobile-only">
+                            <div class="d-flex js-close-second-layer close-second-layer header--mobile-only">
                                 <div class="rotate-left"><i class="icon-cheveron-down"></i></div> zurück
                             </div>
                             <ul class="container container__header">
@@ -68,7 +72,20 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="">Stories</a></li>
+                    <li class="js-bottom-nav__list-level-one">
+                        <a href="" class="d-flex justify-content-between">Stories<div class="d-flex header--mobile-only"><i class="icon-cheveron-down rotate-right"></i></div></a>
+                        <div class="bottom-nav__list-level-two js-bottom-nav__list-level-two">
+                            <div class="d-flex js-close-second-layer close-second-layer header--mobile-only">
+                                <div class="rotate-left"><i class="icon-cheveron-down"></i></div> zurück
+                            </div>
+                            <ul class="container container__header">
+                                <li><a href="">submenu 5</a></li>
+                                <li><a href="">submenu 6</a></li>
+                                <li><a href="">submenu 7</a></li>
+                                <li><a href="">submenu 8</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="">Interviews</a></li>
                     <li><a href="">International</a></li>
                     <li><a href="">Archiv</a></li>
@@ -90,8 +107,13 @@
 <div class="header-sujet-slider swiper-container bg-dark">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <div class="header-sujet" style="position: relative">
-                <img src="./img/img-one.png" alt="image description">
+            <div class="header-sujet">
+                <!-- use different images for media queries -->
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/img-one.png">
+                    <source srcset="./img/img-one.png">
+                    <img src="./img/img-one.png" alt="">
+                </picture>
                 <div class="header-sujet_badge">
                     <div class="header-sujet_badge-date">08.05</div>
                     <div class="header-sujet_badge-category">Uefa Europa League</div>
@@ -106,8 +128,13 @@
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="header-sujet" style="position: relative">
-                <img src="./img/img-two.png" alt="image description">
+            <div class="header-sujet">
+                <!-- use different images for media queries -->
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/img-two.png">
+                    <source srcset="./img/img-two.png">
+                    <img src="./img/img-two.png" alt="">
+                </picture>
                 <div class="header-sujet_badge">
                     <div class="header-sujet_badge-date">08.05</div>
                     <div class="header-sujet_badge-category">Uefa Europa League</div>
@@ -122,8 +149,13 @@
             </div>
         </div>
         <div class="swiper-slide">
-            <div class="header-sujet" style="position: relative">
-                <img src="./img/img-three.png" alt="image description">
+            <div class="header-sujet">
+                <!-- use different images for media queries -->
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/img-three.png">
+                    <source srcset="./img/img-three.png">
+                    <img src="./img/img-three.png" alt="">
+                </picture>
                 <div class="header-sujet_badge">
                     <div class="header-sujet_badge-date">08.05</div>
                     <div class="header-sujet_badge-category">Uefa Europa League</div>
@@ -248,8 +280,8 @@
 
 
     <div class="container d-lg-flex align-items-center">
-        <h2 class="content-headline">Saison</h2>
-        <div class="d-md-flex justify-content-between w-100 content-multiple">
+        <h2 class="content__headline">Saison</h2>
+        <div class="d-md-flex justify-content-between w-100 content__multiple">
             <ul class="content-categories">
                 <li class="active"><a href="#">Bundesliga</a></li>
                 <li><a href="#">DFB Pokal</a></li>
@@ -373,7 +405,7 @@
 
 
     <div class="container d-lg-flex align-items-center content-spacer">
-        <h2 class="content-headline">Stories</h2>
+        <h2 class="content__headline">Stories</h2>
         <ul class="content-categories">
             <li><a href="#">Hintergrund</a></li>
             <li><a href="#">Riederwald</a></li>
@@ -485,7 +517,7 @@
 
 
     <div class="container d-lg-flex align-items-center content-spacer">
-        <h2 class="content-headline">Interviews</h2>
+        <h2 class="content__headline">Interviews</h2>
         <ul class="content-categories">
             <li><a href="#">Adlerträger</a></li>
             <li><a href="#">Krombacher Runde</a></li>
@@ -596,7 +628,7 @@
 
 
     <div class="container d-lg-flex align-items-center content-spacer">
-        <h2 class="content-headline">International</h2>
+        <h2 class="content__headline">International</h2>
         <ul class="content-categories">
             <li><a href="#">english</a></li>
             <li><a href="#">spanish</a></li>
@@ -708,7 +740,7 @@
 
 
     <div class="container d-lg-flex align-items-center content-spacer">
-        <h2 class="content-headline">archiv</h2>
+        <h2 class="content__headline">archiv</h2>
         <ul class="content-categories">
             <li><a href="#">eintracht tv news</a></li>
             <li><a href="#">solo</a></li>
