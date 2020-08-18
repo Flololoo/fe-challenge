@@ -7,7 +7,6 @@ let openTopNav  = document.querySelector('.js-open-top-nav'),
     topNav      = document.querySelector('.js-top-nav');
 
 openTopNav.addEventListener('click', () => {
-    console.log(topNav)
     topNav.classList.add('open');
 });
 
@@ -23,30 +22,29 @@ let burgermenu  = document.querySelector('.js-menu-btn'),
     navs        = document.querySelector('.js-navs');
 
 burgermenu.addEventListener('click', () => {
-    console.log(navs)
     navs.classList.toggle('open');
     closeTopNav();
 });
 
-let bottomNavOne        = document.querySelector('.js-bottom-nav__list-level-one'),
-    bottomNavTwo        = document.querySelector('.js-bottom-nav__list-level-two'),
-    bottomNavTwoClose   = document.querySelector('.js-close-second-layer');
+let bottomNavOne        = document.getElementsByClassName('js-bottom-nav__list-level-one'),
+    bottomNavTwoClose   = document.getElementsByClassName('js-close-second-layer');
 
-bottomNavOne.addEventListener('click', () => {
-    bottomNavOne.querySelector('.js-bottom-nav__list-level-two')
-        .classList.add('open')
-});
 
-bottomNavOne.addEventListener('click', (e) => {
-    bottomNavOne.querySelector('.js-bottom-nav__list-level-two')
-        .classList.add('open')
-    e.stopPropagation();
-    e.preventDefault();
-});
-bottomNavTwoClose.addEventListener('click', (e) => {
-    bottomNavTwo.classList.remove('open')
-    e.stopPropagation();
-});
+for(let navElem of bottomNavOne){
+    navElem.addEventListener('click', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        navElem.querySelector('.js-bottom-nav__list-level-two')
+            .classList.add('open')
+    });
+}
+
+for(let closeNavElem of bottomNavTwoClose){
+    closeNavElem.addEventListener('click', (e) => {
+        closeNavElem.parentNode.classList.remove('open')
+        e.stopPropagation();
+    });
+}
 
 let mobileSearchbarBtn  = document.querySelector('.js-open-search-btn'),
     mobileSearchbar     = document.querySelector('.js-searchbar--mobile');
@@ -60,6 +58,7 @@ mobileSearchbarBtn.addEventListener('click', () => {
 
 
 /* slider */
+/* I've used swiper.js for the sliders */
 let headerSujet = new Swiper('.header-sujet-slider', {
     speed: 1000,
     spaceBetween: 0,

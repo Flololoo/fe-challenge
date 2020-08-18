@@ -216,7 +216,7 @@
         display: block;
     }
 
-    .header-mobile-only{
+    .header--mobile-only{
         display: none;
     }
 }
